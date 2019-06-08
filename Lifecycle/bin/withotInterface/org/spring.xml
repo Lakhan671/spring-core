@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+    <bean id="lakhan" class="withotInterface.org.BookCollection" autowire="byName">
+ </bean>
+  
+  <bean id="booktype1" class="withotInterface.org.BookType">
+   <property name="java" value="Head first"/>
+   <property name="C"   value="explorine C"/>
+   <property name="BD" value="Infoses DB"/>
+  </bean>
+  <bean id="booktype2" class="withotInterface.org.BookType">
+   <property name="java" value="OCJP"/>
+   <property name="C" value="C in depth"/>
+   <property name="BD" value="ICS DB"/>
+  </bean>
+  <bean id="booktype3" class="withotInterface.org.BookType">
+   <property name="java" value="Black book"/>
+   <property name="C" value="Ebala..."/>
+   <property name="BD" value="IIT DB"/>
+  </bean>
+  </beans>

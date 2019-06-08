@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+ <bean id="coll" class="lakhan.org.com.college" >
+ <property name="student1" ref="s1"/>
+ <property name="student2">
+	   <bean id="s2" class="lakhan.org.com.StudentInformation">
+	   <property name="name" value="nirmal singh"/>
+	   <property name="rollno" value="100024"/>
+	   </bean>
+ </property>	   
+ 
+ <property name="student3">
+      <bean id="s3" class="lakhan.org.com.StudentInformation">
+     <property name="name" value="Arjun singh"/>
+      <property name="rollno" value="100025"/>
+      </bean>
+  </property>
+  </bean>
+
+
+
+<bean id="s1" class="lakhan.org.com.StudentInformation">
+   <property name="name" value="lakhan singh"/>
+    <property name="rollno" value="100023"/>
+    </bean>
+   <alias name="coll" alias="sd"/>
+    
+  </beans>

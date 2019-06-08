@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns: xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+   <bean id="student" class="DepartMent" autowire="byName">
+   </bean>
+    <bean id="student1"  class="Students">
+    <qualifier value="ItStudent"/>
+   <property name="roll" value="1022"/>
+   <property name="name" value="lakhan singh"/>
+   <property name="address" value="delhi 201stone"/>
+   </bean>
+   
+    <bean id="boy"  class="Students">
+   <property name="roll" value="1022"/>
+   <property name="name" value="lakhan singh"/>
+   <property name="address" value="delhi 201stone"/>
+   </bean> 
+   
+    <bean id="student2"  class="Students">
+   <property name="roll" value="1032"/>
+   <property name="name" value="arjun  singh"/>
+   <property name="address" value="Rachi 201stone"/>
+   </bean> 
+   
+    <bean id="student3"  class="Students">
+   <property name="roll" value="1042"/>
+   <property name="name" value="nirmal singh"/>
+   <property name="address" value="Bombay 201stone"/>
+   </bean>
+   <context:annotation-config/>
+   <context:component-scan base-package="lakhan"/>
+       
+  
+   </beans>

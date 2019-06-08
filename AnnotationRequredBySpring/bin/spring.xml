@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+   <beans>
+   <bean id="Books" class="Pages" autowire="byName">
+   </bean>
+   <bean id="line" class="Lines">
+   <property name="line1" value="my name is lakhan singh"/>
+   </bean>
+   <bean id="Book" class="HeadFirstPages" autowire="byName">
+   </bean>
+   <bean id="l" class="Lines">
+   
+   </bean>
+   <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+   
+   </beans>
